@@ -1,0 +1,73 @@
+body {
+  font-family: 'Comfortaa', sans-serif;;
+  font-size: 12px;
+  color: $primary-color;
+  letter-spacing: 0.02em;
+  background-color: $background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 690px;
+    }
+  }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1180px;
+  }
+}
+
+.section {
+  max-width: 1920px;
+  margin: 0 auto;
+  // padding: 
+}
+
+// @media screen and (min-width: $tablet) {
+//   .section {
+//     padding: 
+//   }
+// }
+// @media screen and (min-width: $desktop) {
+//   .section {
+//     padding: 
+//   }
+// }
