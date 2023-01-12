@@ -1,0 +1,65 @@
+.header {
+    background-color: teal;
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left:calc(50% - 233px/2 + 23.5px);;
+    z-index: 0;
+    width: 233px;
+    height: 34px;
+    background: $background-color;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+    border-radius: 190px;
+  }
+}
+
+.logo {
+outline: 1px solid tomato;
+  position: relative;
+  bottom: 20px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+  background-color: $background-color;
+
+  &__text {
+    font-size: 8px;
+    line-height: 1.12;
+  }
+}
+
+
+.nav {
+  margin-top: 20px;
+  margin-left: auto;
+  display: flex;
+  gap: 9px;
+
+  &__link {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: $background-color;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+
+  }
+}
