@@ -30,6 +30,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: currentColor;
 }
 
 .container {
@@ -45,7 +46,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 690px;
+    width: 730px;
     }
   }
 
@@ -58,7 +59,7 @@ a {
 .section {
   max-width: 1920px;
   margin: 0 auto;
-  // padding: 
+  padding-bottom: 50px;
 }
 
 // @media screen and (min-width: $tablet) {
