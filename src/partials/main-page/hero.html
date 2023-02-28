@@ -1,7 +1,8 @@
 <section class="section hero">
 <div class="hero__slider swiper">
   <ul class="hero_advertisement--list swiper-wrapper">
-    <li class="hero_advertisement--item swiper-slide">
+    <li class="swiper-slide">
+      <div class="hero_advertisement--item" >
       <div class="hero__sliderBox">
         <h2 class="hero__sliderBox--title">
           Detox программа –
@@ -27,13 +28,14 @@
         width="20px"
         class="hero__slider--img"
       />
+      </div>
     </li>
-    <li class="hero_advertisement--item swiper-slide">
+    <li class="swiper-slide">
+      <div class="hero_advertisement--item second" >
       <div class="hero__sliderBox">
-        <h2 class="hero__sliderBox--title">
-          Сервис правильного питания.
+        <h2 class="hero__sliderBox--title second">
+          Сервис правильного питания. </br>
           <span class="hero__sliderBox--title-color">Худей быстро!</span>
-          организма
         </h2>
         <div class="hero__sliderBox--order">
           <button class="hero__sliderBox--btn">Заказать</button>
@@ -49,18 +51,22 @@
         width="20px"
         class="hero__slider--img"
       />
+      </div>
     </li>
-    <li class="hero_advertisement--item swiper-slide">
+    <li class="swiper-slide">
+      <div class="hero_advertisement--item third" >
       <div class="hero__sliderBox">
-        <h2 class="hero__sliderBox--title"><span class="hero__sliderBox--title-color">Доверьтесь профессионалам.</span> 
+        <h2 class="hero__sliderBox--title third"><span class="hero__sliderBox--title-color">Доверьтесь профессионалам.</span> 
 Я Кобылинский Кирилл - основатель.</h2>
         <p class="hero__sliderBox--descr">
-          <span class="hero__sliderBox--descr-color">Мастер спорта</span>
+          <span class="hero__sliderBox--descr-color ">Мастер спорта</span>
           Мастер спорта Украины по тяжелой атлетике. 
            <span class="hero__sliderBox--descr-color">Высшее образование</span> института физкультуры(НуфвсУ).
         </p>
-        <button class="hero__sliderBox--btn"></button>
-        <p class="hero__sliderBox--price">Всегда открыт для клиентов</p>
+        <div class="hero__sliderBox--order">
+        <button class="hero__sliderBox--btn third">Мой инстаграм</button>
+        <p class="hero__sliderBox--price third">Всегда открыт для клиентов</p>
+        </div>
       </div>
       <img
         src="./images/hero/hero_img_avocado.jpg"
@@ -68,17 +74,21 @@
         width="20px"
         class="hero__slider--img"
       />
+      </div>
     </li>
-    <li class="hero_advertisement--item swiper-slide">
+    <li class="swiper-slide">
+      <div class="hero_advertisement--item" >
       <div class="hero__sliderBox">
         <h2 class="hero__sliderBox--title">
-          Кето питание -  <span class="hero__sliderBox--price-color">вкусное и экстремальное</span> быстрое похудение
+          Кето питание -  <span class="hero__sliderBox--title-color">вкусное и экстремальное</span> быстрое похудение
         </h2>
         <p class="hero__sliderBox--descr">4 приема пищи.</p>
-        <button class="hero__sliderBox--btn"></button>
+        <div class="hero__sliderBox--order">
+        <button class="hero__sliderBox--btn">Заказать</button>
         <p class="hero__sliderBox--price">Пробный день </br>
           <span class="hero__sliderBox--price-color">от 490грн</span>
         </p>
+        </div>
       </div>
       <img
         src="./images/hero/hero_img_avocado.jpg"
@@ -86,6 +96,7 @@
         width="20px"
         class="hero__slider--img"
       />
+      </div>
     </li>
   </ul>
   </div>
@@ -140,6 +151,19 @@
       </button>
     </li>
   </ul>
+  <div class="hero__sliderNav">
+  <div class="swiper-button-prev">
+      <svg class="hero__sliderArrow--svg" width="8px" height="16px">
+          <use href="./images/icons.svg#icon-hero_arrow_prev"></use>
+        </svg>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next">
+    <svg class="hero__sliderArrow--svg" width="8px" height="16px">
+          <use href="./images/icons.svg#icon-hero_arrow_next"></use>
+        </svg>
+  </div>
+  </div>
   <!-- mobile ------------------------>
   <div class="hero-foodConstuctor-positionBox">
   <ul class="hero__foodConstuctor--list-mob">
@@ -183,13 +207,15 @@
       <button type="button" class="hero__foodConstuctor--btn-mob">
             <span class="hero__foodConstuctor--btn-text-mob">5</span>
         <svg class="hero__foodConstuctor--svg-mob" width="40px" height="40px">
-          <use href="./images/icons.svg#icon-hero_table-mob"></use>
+          <use href="./images/icons.svg#icon-hero_table"></use>
         </svg>
       </button>
       <p class="hero__foodConstructor--descr-mob">5 стол</p>
     </li>
   </ul>
   </div>
+  <div>
+  <div class="hero__decoration"></div>
+  </div>
   <ul class="hero_networks-list"></ul>
-  <div class="test"></div>
 </section>
