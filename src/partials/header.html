@@ -1,55 +1,151 @@
 <header class="header">
-    <div class="container">
-        <div class="header-content">
-            <div class="logo">
-                <a class="logo__link" href="./index.html"><img class="logo__img" src="/src/images/header/logo-mobile.svg" alt="company's logo" width="164" height="68"></a>
-            <p class="logo__text">healthy ration</p>
-            </div>
-            <nav class="nav">
-                <div class="nav__tel">
-                    <a class="nav__link" href="tel:+38 068 949 49 19">
-                        <svg class="nav__number--icon" width="27" height="30"><use href="./images/icons.svg#phone-icon"></use></svg>
-                    </a>
-                </div>
-                <div class="nav__content">
-                    <button type="button" class="menu__toggle js-open-menu"
-                    aria-controls="mobile-menu"
-                    aria-expanded="false">
-                        <svg class="menu__toggle--icon" width="25" height="20" aria-label="Mobile-menu open">
-                            <use href="./images/icons.svg#burger-icon">
-                            </use>
-                        </svg>
-                    </button>
-                    <div class="backdrop is-hidden" data-menu>
-                        <div class="menu__container js-menu-container" id="mobile-menu">
-                            <div class="menu__content">
-                                <button type="button" class="menu__toggle menu__toggle--close js-close-menu">
-                                    <svg class="menu__toggle--icon" width="25" height="20" aria-label="Mobile-menu close"><use href="./images/icons.svg#close-icon"></use></svg>
-                                </button>
-                                <div class="menu-breadcrumps">
-                                    <div class="header__nav">
-                                        <ul class="header__nav--list">
-                                            <li class="header__nav--item"><a class="header__nav--link" href="./index.html">Программы питания</a></li>
-                                            <li class="header__nav--item"><a class="header__nav--link" href="./business-lunch.html">Бизнес-ланчи</a></li>
-                                            <li class="header__nav--item"><a class="header__nav--link" href="./shop.html">Gastro Shop</a></li>
-                                            <li class="header__nav--item"><a class="header__nav--link" href="./about-us.html">О нас</a></li>
-                                            <li class="header__nav--item"><a class="header__nav--link" href="./blog.html">Блог</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="language">
-                                        <ul class="language__list">
-                                            <li class="language__item"><a class="language__link" href="#">RU</a></li>
-                                            <li class="language__item"><a class="language__link" href="#">UA</a></li>
-                                            <li class="language__item"><a class="language__link" href="#">EN</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="header__contacts"><a class="header__contacts__link" href="tel:+38 068 949 49 19">+38 (068) 949 - 49 -19</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">
+        <a class="logo__link" href="./images/header/logo-mobile.svg"
+          ><picture>
+            <source srcset="/src/images/header/logo-desktop.svg" media="(min-width: 1180px)">
+            <source srcset="/src/images/header/logo-tablet.svg" media="(min-width: 768px)">
+            <img
+            class="logo__img"
+            src="/src/images/header/logo-mobile.svg"
+            alt="company's logo"
+            width="164"
+            height="68"
+        />
+          </picture></a>
+        <p class="logo__text">healthy ration</p>
+      </div>
+      <nav class="nav">
+        <div class="nav__tel">
+          <a class="nav__link" href="tel:+38 068 949 49 19">
+            <svg class="nav__number--icon" width="27" height="30">
+              <use href="./images/icons.svg#phone-icon"></use>
+            </svg>
+          </a>
         </div>
+        <div class="nav__content">
+          <button
+            type="button"
+            class="menu__toggle js-open-menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="menu__toggle--icon"
+              width="25"
+              height="20"
+              aria-label="Mobile-menu open"
+            >
+              <use href="./images/icons.svg#burger-icon"></use>
+            </svg>
+          </button>
+          <div class="menu__container js-menu-container" id="mobile-menu">
+            <div class="menu-content">
+              <button
+                type="button"
+                class="menu__toggle menu__toggle--close js-close-menu"
+              >
+                <svg
+                  class="menu__toggle--icon"
+                  width="25"
+                  height="20"
+                  aria-label="Mobile-menu close"
+                >
+                  <use href="./images/icons.svg#close-icon"></use>
+                </svg>
+              </button>
+              <div class="menu__breadcrumps">
+                <div class="header__nav">
+                  <ul class="header__nav--list">
+                    <li class="header__nav--item">
+                      <a class="header__nav--link" href="./index.html"
+                        >Программы питания</a
+                      >
+                    </li>
+                    <li class="header__nav--item">
+                      <a class="header__nav--link" href="./business-lunch.html"
+                        >Бизнес-ланчи</a
+                      >
+                    </li>
+                    <li class="header__nav--item">
+                      <a class="header__nav--link" href="./shop.html"
+                        >Gastro Shop</a
+                      >
+                    </li>
+                    <li class="header__nav--item">
+                      <a class="header__nav--link" href="./about-us.html"
+                        >О нас</a
+                      >
+                    </li>
+                    <li class="header__nav--item">
+                      <a class="header__nav--link" href="./blog.html">Блог</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="language">
+                  <ul class="language__list">
+                    <li class="language__item">
+                      <a class="language__link" href="#">RU</a>
+                    </li>
+                    <li class="language__item">
+                      <a class="language__link" href="#">UA</a>
+                    </li>
+                    <li class="language__item">
+                      <a class="language__link" href="#">EN</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__contacts">
+                  <a class="header__contacts-link" href="tel:+38 068 949 49 19"
+                    >+38 (068) 949 - 49 -19</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__breadcrumps">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html"
+                >Программы питания</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./business-lunch.html"
+                >Бизнес-ланчи</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./shop.html">Gastro Shop</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./about-us.html">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./blog.html">Блог</a>
+            </li>
+          </ul>
+          <ul class="lang">
+            <li class="lang__item">
+              <a class="lang__link" href="#">RU</a>
+            </li>
+            <li class="lang__item">
+              <a class="lang__link" href="#">UA</a>
+            </li>
+            <li class="lang__item">
+              <a class="lang__link" href="#">EN</a>
+            </li>
+          </ul>
+          <div class="contact">
+            <a class="contact__link" href="tel:+38 068 949 49 19"
+              >+38 (068) 949 - 49 -19</a
+            >
+          </div>
+        </div>
+      </nav>
     </div>
+  </div>
+  <div class="backdrop is-hidden" data-menu></div>
 </header>
