@@ -36,10 +36,10 @@ const swiper = new Swiper('.swiper', {
   },
   loop: true,
   autoHeight: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true,
-  },
+  // effect: 'fade',
+  // fadeEffect: {
+  //   crossFade: true,
+  // },
 
   // pauseOnMouseEnter: true,
 });
