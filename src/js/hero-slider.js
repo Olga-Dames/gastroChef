@@ -23,17 +23,20 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-  //   8
+
   spaceBetween: 400,
   speed: 1000,
+
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
+
   loop: true,
   autoHeight: true,
   // effect: 'fade',
@@ -41,5 +44,5 @@ const swiper = new Swiper('.swiper', {
   //   crossFade: true,
   // },
 
-  // pauseOnMouseEnter: true,
+  pauseOnMouseEnter: true,
 });
