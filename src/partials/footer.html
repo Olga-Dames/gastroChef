@@ -1,5 +1,5 @@
 <section class="footer">
-  <div class="container">
+  <div class="container footer__container">
     <div class="footer__box">
       <ul class="footer__menu--list">
         <li class="footer__menu--item">
@@ -23,28 +23,66 @@
         </li>
       </ul>
       <div class="footer__logo--box">
-        <svg class="footer__logo"></svg>
+        <picture class="footer__img">
+          <source
+            srcset="/src/images/footer/footer_logo.svg"
+            media="(min-width: 1180px)"
+          />
+          <source
+            srcset="/src/images/footer/footer_logo_mob.svg"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="logo__img"
+            src="/src/images/footer/footer_logo_mob.svg"
+            alt="company's logo"
+            width="164"
+            height="68"
+          />
+        </picture>
         <h2 class="footer__logo--name">сервис здорового питания</h2>
       </div>
       <div class="footer__networks--box">
         <ul class="footer__rules--list">
-          <li class="footer__rules--item"></li>
-          <li class="footer__rules--item"></li>
+          <li class="footer__rules--item">
+            <p class="footer__rule">Условия сотрудничества</p>
+          </li>
+          <li class="footer__rules--item"><p class="footer__rule">FAQ</p></li>
         </ul>
         <div class="footer__contacts">
           <ul class="footer__networks--list">
             <li class="footer__networks--item">
               <a href="" class="footer__networks__link">
                 <svg class="footer__networks__icon" width="20px" height="20px">
-                  <use href=""></use>
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__networks--item"></li>
-            <li class="footer__networks--item"></li>
-            <li class="footer__networks--item"></li>
+            <li class="footer__networks--item">
+              <a href="" class="footer__networks__link">
+                <svg class="footer__networks__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__networks--item">
+              <a href="" class="footer__networks__link">
+                <svg class="footer__networks__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__networks--item">
+              <a href="" class="footer__networks__link">
+                <svg class="footer__networks__icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-          <a href="" class="footer__tell"></a>mpm
+          <a href="tel:+380689494919" class="footer__tell"
+            >+38 (068) 949 - 49 - 19</a
+          >
         </div>
       </div>
     </div>
