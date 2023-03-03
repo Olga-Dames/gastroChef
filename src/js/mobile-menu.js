@@ -9,10 +9,10 @@
       openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
       mobileMenu.classList.toggle('is__open');
       backDrop.classList.toggle('is-hidden');
-      const scrollLockMethod = !isMenuOpen
-        ? 'disableBodyScroll'
-        : 'enableBodyScroll';
-      bodyScrollLock[scrollLockMethod](document.body);
+      // const scrollLockMethod = !isMenuOpen
+      //   ? 'disableBodyScroll'
+      //   : 'enableBodyScroll';
+      // bodyScrollLock[scrollLockMethod](document.body);
     };
     openMenuBtn.addEventListener('click', toggleMenu);
     closeMenuBtn.addEventListener('click', toggleMenu);
@@ -24,6 +24,6 @@
       if (!e.matches) return;
       mobileMenu.classList.remove('is__open');
       openMenuBtn.setAttribute('aria-expanded', false);
-      bodyScrollLock.enableBodyScroll(document.body);
+      // bodyScrollLock.enableBodyScroll(document.body);
     });
   })();
