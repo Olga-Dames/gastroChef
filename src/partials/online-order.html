@@ -8,7 +8,7 @@
       </p>
       <form class="order__form" name="order__form" autocomplete="on">
         <div class="form__wrapper">
-          <label for="name" class="order__label">Имя</label>
+          <label for="name" class="order__label order__label--name">Имя</label>
           <div class="input__wrapper">
             <input
               class="order__input"
@@ -16,10 +16,10 @@
               type="text"
               name="name"
               placeholder="Иван"
-              required
             />
+            <span class="indicator name-indicator"></span>
           </div>
-          <label for="phone" class="order__label">Номер телефона</label>
+          <label for="phone" class="order__label order__label--phone">Номер телефона</label>
           <div class="input__wrapper">
             <input
               class="order__input"
@@ -27,8 +27,8 @@
               type="text"
               name="phone"
               placeholder="0972140632"
-              required
             />
+            <span class="indicator phone-indicator"></span>
           </div>
           <div class="checkbox__wrapper">
             <label class="order__checkbox-label"
@@ -59,7 +59,7 @@
           Заказ по телефону
         </button>
         <p class="order__addition">ИЛИ</p>
-        <button class="order__btn order__btn--online" type="submit">Онлайн заказ</button>
+        <button class="order__btn order__btn--online" type="button">Онлайн заказ</button>
       </form>
     </div>
     <div class="faq__wrapper">
