@@ -1,8 +1,13 @@
 .footer {
   box-shadow: 0px 0px 30px 0px #56565640;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
 }
 .footer__box {
+  padding-top: 25px;
+  padding-bottom: 50px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -66,11 +71,13 @@
   font-weight: 400;
   line-height: 1.16em;
   text-align: center;
+  margin-bottom: 27px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.16em;
     margin-top: -15px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
@@ -78,9 +85,17 @@
 }
 
 .footer__networks--box {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: right;
+    align-items: right;
+    display: block;
+  }
+}
+
+.footer__rules--list {
   display: none;
   @media screen and (min-width: 768px) {
-    align-items: right;
     display: block;
   }
 }
@@ -98,6 +113,9 @@
 }
 
 .footer__networks--list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
@@ -109,11 +127,15 @@
 }
 .footer__networks--item {
   border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  background-color: $dark-font-color;
+  margin-left: 11px;
   @media screen and (min-width: 768px) {
-    width: 21px;
-    height: 21px;
-    background-color: $dark-font-color;
-    margin-left: 11px;
+    // width: 21px;
+    // height: 21px;
+    // background-color: $dark-font-color;
+    // margin-left: 11px;
   }
   @media screen and (min-width: 1200px) {
     width: 30px;
@@ -141,6 +163,7 @@
 }
 
 .footer__tell {
+  font-family: $secondary-font;
   font-weight: 700;
   color: $accent-color;
 }
