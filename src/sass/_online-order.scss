@@ -87,9 +87,8 @@
 
 .input__wrapper {
   position: relative;
-
-  &::after {
-    content: ' ';
+}
+ .indicator {
     position: absolute;
     top: 10px;
     right: 17px;
@@ -100,7 +99,24 @@
     background-color: green;
     display: none;
   }
+
+.name-indicator.invalid{
+  display: block;
+  background-color: $invalid-form-color;
 }
+.phone-indicator.invalid{
+  display: block;
+  background-color: $invalid-form-color;
+}
+.name-indicator.valid{
+  display: block;
+  background-color: $accent-color;
+}
+.phone-indicator.valid{
+  display: block;
+  background-color: $accent-color;
+}
+
 .order__input {
   width: 100%;
   margin-bottom: 30px;
