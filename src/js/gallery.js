@@ -15,26 +15,29 @@
   speed: 800,
 
   breakpoints: {
-    0: {
+    320: {
       slidesPerView: 1.3,
       spaceBetween: 20,
-      centeredSlides: true,
+    },
+    400: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
     },
     480: {
       slidesPerView: 1.9,
+    },
+    600: {
+      slidesPerView: 2.1,
       spaceBetween: 20,
-      centeredSlides: true,
     },
     768: {
       slidesPerView: 2.7,
-      spaceBetween: 30,
-      centeredSlides: true,
-    },
-    1200: {
-      slidesPerView: 4.8,
-      loopedSlides: 6,
       spaceBetween: 20,
-      centeredSlides: false,
+    },
+ 
+    1200: {
+      slidesPerView: 4.7,
+      spaceBetween: 20,
     },
   },
 });
