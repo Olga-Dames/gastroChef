@@ -493,13 +493,18 @@
 // }
 
 // ------ slider navigation ---------
+
 .hero__sliderNav {
+  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   margin-bottom: 50px;
   margin-top: 20px;
+  &.is-hidden {
+    opacity: 1;
+  }
   @media screen and (min-width: 480px) {
   }
 
@@ -517,6 +522,7 @@
     margin-top: 45px;
   }
 }
+
 .swiper-button-prev {
   padding-top: 3px;
   margin-right: 20px;
@@ -528,20 +534,3 @@
 .hero__sliderArrow--svg {
   fill: $accent-color;
 }
-
-// .hero__decoration {
-//   position: absolute;
-//   top: -200%;
-//   left: 300px;
-//   background-color: $accent-color;
-//   z-index: 10000;
-//   top: -700%;
-//   left: 0;
-//   width: 1293px;
-//   &::before {
-//     content: '';
-//     display: block;
-//     padding-top: 100%;
-//   }
-//   border-radius: 50%;
-// }
