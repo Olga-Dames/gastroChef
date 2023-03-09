@@ -295,6 +295,13 @@
 }
 
 //------------------schedule------------------
+.specialities__schedule--box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 
 .specialities__schedule-day--list {
   display: flex;

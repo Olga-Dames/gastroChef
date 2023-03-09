@@ -22,6 +22,10 @@ const dietDescEL = document.querySelectorAll('.specialities__diet-descr--item');
 dietTypeBtnList.addEventListener('click', e => {
   makeActiveEL(e, dietTypeBtn);
   dietDescEL.forEach(descr => {
+    if (e.target.nodeName !== 'BUTTON') {
+      return;
+    }
+    console.log(e.target.nodeName);
     if (descr.dataset.active === e.target.dataset.active) {
       descr.classList.add('active');
       return;
